@@ -1,0 +1,47 @@
+:root {
+    --primary-clr-light:rgba(237, 235, 254, 1); --primary-clr-light-hover: rgba(227, 226, 253, 1); --primary-clr-light-active: rgba(198, 194, 250, 1);
+    --primary-clr-norm: rgba(71, 59, 240, 1) ; --primary-clr-norm-hover: rgba(64, 53, 216, 1) ; --primary-clr-norm-active:rgba(57, 47, 192, 1) ;
+    --primary-clr-dark: rgba(53, 44, 180, 1) ; --primary-clr-dark-hover: rgba(43, 35, 144, 1) ; --primary-clr-dark-active: rgba(32, 27, 108, 1) ;
+    --primary-clr-darker: rgba(25, 21, 84, 1);
+
+    --white-norm: rgba(255, 255, 255, 1) ; --white-norm-hover: rgba(230, 230, 230, 1) ; --white-norm-active: rgba(204, 204, 204, 1) ;
+    --white-dark: rgba(191, 191, 191, 1) ; --white-dark-hover: rgba(153, 153, 153, 1) ; --white-dark-active: rgba(115, 115, 115, 1);
+    --white-darker: rgba(89, 89, 89, 1);
+
+    --black-light: rgba(231, 232, 234, 1) ; --black-light-hover: rgba(219, 220, 223, 1) ; --black-light-active: rgba(181, 183, 189, 1) ;
+    --black-norm: rgba(15, 23, 42, 1) ; --black-norm-hover: rgba(14, 21, 38, 1) ; --black-norm-active: rgba(12, 18, 34, 1) ;
+    --black-dark: rgba(11, 17, 32, 1) ; --black-dark-hover: rgba(9, 14, 25, 1) ; --black-dark-active: rgba(7, 10, 19, 1) ;
+    --black-darker: rgba(5, 8, 15, 1);
+
+
+    --gradient: linear-gradient(to bottom, rgba(238, 239, 255, 1), rgba(238, 239, 255, 0));
+
+
+}
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    html{
+        scroll-behavior: smooth;
+        font-size: 16px;
+
+        body{
+            background-color: var(--white-norm);
+            color: var(--black-norm) ;
+
+            img, picture, video, canvas, svg {
+                display: block;
+                max-width: 100%;
+                user-select: none;
+            }
+        }
+    }
+}
+
+
+
+

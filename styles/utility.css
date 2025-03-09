@@ -1,0 +1,123 @@
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media(min-width: 475px){
+        max-width: 475px;
+    }
+    
+    @media(min-width: 640px){
+        max-width: 640px;
+    }
+    
+    @media(min-width: 768px){
+        max-width: 768px;
+    }
+    
+    @media(min-width: 1024px){
+        max-width: 1024px;
+    }
+    
+    @media(min-width: 1280px){
+        max-width: 1280px;
+    }
+    
+    @media(min-width: 1536px){
+        max-width: 1536px;
+    }       
+}
+
+.navbar{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+
+    @media(min-width: 1024px){
+        height: 87px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media(min-width: 1536px){
+        padding-left: 150px;
+        padding-right: 150px;   
+    }   
+
+    .navbar_menu{
+        display: none;
+
+        @media(min-width: 1024px){
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            gap:20px;
+
+            .navbar_menulist{
+                color: var(--black-norm);
+                font-size: 16px;
+                font-weight: 500;
+                padding: 12px 12px;
+
+                a{
+                    text-decoration: none; 
+                    color: inherit; 
+                }
+
+                &:hover{
+                    color: var(--primary-clr-norm);
+                    border-bottom: 2px solid var(--primary-clr-norm) ;
+                }
+            }
+        }
+
+        @media(min-width: 1536px){
+            .navbar_menulist{
+                padding: 16px 24px;
+            }
+
+        }
+
+    }
+
+    .navbar_btn{
+        display: none;
+
+        @media(min-width: 1024px){
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 16px 32px;
+            background-color: var(--black-light);
+            border-radius: 5px;
+
+            &:hover {
+                color: var(--primary-clr-norm) ;
+                outline: 2px solid var(--primary-clr-norm);
+            }
+
+        }
+    }
+
+    .navbar_icon{
+        @media(min-width: 1024px){
+            display: none;
+        }
+
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 32px 16px;
+    border-radius: 5px;
+    color: var(--white-norm);
+    background-color: var(--primary-clr-norm);
+}
