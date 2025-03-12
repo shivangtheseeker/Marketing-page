@@ -1,0 +1,132 @@
+.featured{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+    margin-top: 27px;
+
+    
+    @media(min-width: 1024px){
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 70px;
+    }
+
+
+    @media(min-width: 1536px){
+        gap: 40px;
+        padding-left: 150px;
+        padding-right: 150px; 
+        margin-top: 74px; 
+    }
+
+    .featured_headbox{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @media(min-width: 1024px){
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .featured_heading{
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+
+            @media(min-width: 1024px){
+                font-size: 32px;
+            }
+
+            @media(min-width: 1536px){
+                font-size: 42px;
+            }
+        }
+
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            height: 55px;
+
+            @media(min-width: 1024px){
+                width: 284px;
+            }
+
+            p{
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+        }
+    }
+
+    .featured_box{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media(min-width: 1024px){
+           flex-direction: column;
+           gap: 24px;
+        }
+
+        @media(min-width: 1536px){
+            gap: 59px;
+        }
+
+        .featured_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media(min-width: 1024px){
+                gap: 24px;
+            }
+     
+            @media(min-width: 1536px){
+                 gap: 40px;
+            }
+
+            .featured_card{
+                width: 392px ;
+                height: 95px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+
+                @media(min-width: 1024px){
+                    width: 100%;      
+                }
+         
+                @media(min-width: 1536px){
+                    gap: 24px;
+                }
+
+                .featured_cardbox{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 12px;
+
+                    .featured_cardheading{
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+
+                    .featured_cardpara{
+                        font-size: 16px;
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+}

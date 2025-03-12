@@ -121,3 +121,26 @@
     color: var(--white-norm);
     background-color: var(--primary-clr-norm);
 }
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    .card_box{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .card_heading{
+            font-size: 18px ;
+            font-weight: 700 ;
+        }
+
+        .card_para{
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+    }
+}
